@@ -1,0 +1,17 @@
+{
+    "name": "tiago/portfolio",
+    "description": "A simple portfolio project",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Tiago\\Portfolio\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tiago Lemos Neitzke",
+            "email": "tl.neitzke@hotmail.com"
+        }
+    ],
+    "require": {}
+}
