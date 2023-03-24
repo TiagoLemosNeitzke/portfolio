@@ -14,7 +14,8 @@ module.exports = {
       'title-2': ['48px', '62px'],
       'title-3': ['36px', '46.8px'],
       'title-4': ['28px', '36.4px'],
-      'title-5': ['16px', '20.8px']
+      'title-5': ['18px', '28px'],
+      'title-6': ['16px', '24px'],
     },
     extend: {},
   },
