@@ -62,6 +62,6 @@ try {
     $mail->send();
 
 } catch (Exception $e) {
-    echo 'Desculpe! Mas ocorreu um erro ao tentar enviar sua mensagem.';
+    header('Location: http://localhost:8000/src/php/errorSendingMessage.php');
     $mail->ErrorInfo;
 }
