@@ -6,12 +6,12 @@ use Tiago\Portfolio\php\Message;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\PHPMailer;
 
-
 $message = new Message();
 
 $message->__set('name', $_POST['name']);
 $message->__set('phone', $_POST['phone']);
 $message->__set('email', $_POST['email']);
+$message->__set('prefer_contact', $_POST['prefer_contact']);
 $message->__set('message', $_POST['message']);
 
 
@@ -53,20 +53,15 @@ try {
                         '<strong>Nome: </strong>'. $message->__get('name') . '<br>'.
                         '<strong>E-mail: </strong>'. $message->__get('email') . '<br>'.
                         '<strong>Telefone: </strong>'. $message->__get('phone') . '<br>'.
-                        '<strong>Mensagem: </strong>'. $message->__get('message');
+                        '<strong>Mensagem: </strong>'. $message->__get('message'). '<br>' .
+                        '<strong>Prefere contato via: </strong>'. $message->__get('prefer_contact');
     $mail->AltBody = 'É necessário utilizar um client de e-mail que suporte HTML para ter acesso total ao conteúdo deste e-mail';
+    
+    header('Location: http://localhost:8000/src/php/feedBackMessage.php');
 
     $mail->send();
 
-    $message->status['status_code'] = 1;
-    $message->status['status_description'] = 'Seu e-mail foi enviado com sucesso!';
-
-    if($message->status['status_code'] == 1){
-        $message->status['status_code'] = '';
-        header('Location: feedBackMessage.php');
-    }
 } catch (Exception $e) {
-    echo 'aqui';
-    $message->status['codigo_status'] = 2;
-    $message->status['descricao_status'] = "Não foi possível enviar este e-mail! Por favor tente novamente mais tarde. Detalhes do erro: {$mail->ErrorInfo}";
+    echo 'Desculpe! Mas ocorreu um erro ao tentar enviar sua mensagem.';
+    $mail->ErrorInfo;
 }

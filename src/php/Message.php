@@ -7,8 +7,8 @@ class Message
     public function __construct(private string $name = '',
     private string $email = '',
     private string $phone = '',
-    private string $message = '',
-    public $status = ['status_code' => '', 'status_description' => ''])
+    private string $prefer_contact = '',
+    private string $message = '')
     {}
 
     public function __get($attr)
@@ -29,5 +29,4 @@ class Message
 
         return true;
     }
-
 }
