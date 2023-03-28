@@ -17,6 +17,30 @@ module.exports = {
       'title-5': ['18px', '32px'],
       'title-6': ['16px', '24px'],
     },
+    keyframes: {
+      progressBar60: {
+        '0%': { width: '0%' },
+        '60%': { width: '60%' },
+      },
+      progressBar70: {
+        '0%': { width: '0%' },
+        '70%': { width: '70%' },
+      },
+      progressBar75: {
+        '0%': { width: '0%' },
+        '75%': { width: '75%' },
+      },
+      progressBar90: {
+        '0%': { width: '0%' },
+        '90%': { width: '90%' },
+      }
+    },
+    animation: {
+      progressBar60: 'progressBar60 1s ease-in-out 1',
+      progressBar70: 'progressBar70 1s ease-in-out 1',
+      progressBar75: 'progressBar75 1s ease-in-out 1',
+      progressBar90: 'progressBar90 1s ease-in-out 1',
+    },
     extend: {},
   },
   plugins: [],
