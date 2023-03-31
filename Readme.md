@@ -20,7 +20,7 @@ Utilizei para desenvolver o projeto as seguintes tecnologias:
 
 O projeto é composto por 3 seções:
 
-## ✒️ Autores
+## ✒️ Autor
 
 Este projeto está sendo desenvolvido por:
 
