@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./src/html/*.{html,js}", "./src/php/*.{php}"],
   theme: {
-    colors:{
+    colors: {
       'primary-color': '#01b5c0',
       'primary-color-400': '#0BA8B1',
       'secondary-color': '#b1dee0',
@@ -36,10 +36,10 @@ module.exports = {
       }
     },
     animation: {
-      progressBar60: 'progressBar60 1s ease-in-out 1',
-      progressBar70: 'progressBar70 1s ease-in-out 1',
-      progressBar75: 'progressBar75 1s ease-in-out 1',
-      progressBar90: 'progressBar90 1s ease-in-out 1',
+      progressBar60: 'progressBar60 4s ease-in-out',
+      progressBar70: 'progressBar70 4s ease-in-out',
+      progressBar75: 'progressBar75 4s ease-in-out',
+      progressBar90: 'progressBar90 4s ease-in-out',
     },
     extend: {},
   },
