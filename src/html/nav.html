@@ -1,22 +1,32 @@
-<nav class="bg-primary-color w-full lg:flex lg:flex-row lg:justify-end lg:items-center fixed">
-    <div class="w-full pl-2 py-2">
-        <button type="button" onclick="handleMenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                class="w-6 h-6 text-white border lg:hidden">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
-            </svg>
-        </button>
+<div class="flex flex-row justify-center">
+    <nav class="mt-2 bg-emphasis w-98 lg:flex lg:flex-row lg:justify-end lg:items-center fixed rounded-lg">
+        <div class="flex flex-row justify-around items-center mx-auto">
+            <div class="ml-4">
+                <a href="#home"><img src="../../src/img/logoLetterWithe.png" alt=""></a>
+            </div>
+            <div class="w-full pl-2 py-2">
+                <button type="button" onclick="handleMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-white border lg:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </button>
+            </div>
+        </div>
     
-    </div>
-    <div id="nav" class="hidden lg:flex lg:w-96 lg:flex-row ">
-        <ul id="ul" class="lg:h-4 pl-2 lg:flex lg:flex-row lg:justify-around lg:w-96 lg:items-center">
-            <li class="text-title-5 hover:scale-105 hover:font-semibold"><a class="text-white" href="#aboutMe">Sobre mim</a></li>
-            <li class="text-title-5 hover:scale-105 hover:font-semibold"><a class="text-white" href="#services">Meus Serviços</a></li>
-            <li class="text-title-5 hover:scale-105 hover:font-semibold"><a class="text-white" href="#contact">Contatos</a></li>
-        </ul>
-    </div>
-</nav>
+        <div id="nav" class="hidden lg:flex lg:w-96 lg:flex-row ">
+            <ul id="ul" class="lg:h-4 pl-2 lg:flex lg:flex-row lg:justify-around lg:w-96 lg:items-center">
+                <li class="text-title-5 hover:scale-105 hover:font-semibold"><a class="text-white" href="#aboutMe">Sobre
+                        mim</a></li>
+                <li class="text-title-5 hover:scale-105 hover:font-semibold"><a class="text-white" href="#services">Meus
+                        Serviços</a></li>
+                <li class="text-title-5 hover:scale-105 hover:font-semibold"><a class="text-white"
+                        href="#contact">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
 <script>
     function handleMenu(){
