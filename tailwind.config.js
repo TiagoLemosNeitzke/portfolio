@@ -3,11 +3,11 @@ module.exports = {
   content: ["./src/html/*.{html,js}", "./src/php/*.{php}"],
   theme: {
     colors: {
-      'primary-color': '#01b5c0',
-      'primary-color-400': '#0BA8B1',
-      'secondary-color': '#b1dee0',
+      'primary-color': '#290535',
+      'primary-color-400': '#500e4e',
+      'secondary-color': '#641562',
       'white': "#fff",
-      'emphasis': '#9b9191'
+      'emphasis': '#ca36ce'
     },
     fontSize: {
       'title-1': ['68px', '74px'],
