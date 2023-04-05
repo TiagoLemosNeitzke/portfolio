@@ -6,13 +6,14 @@ module.exports = {
       'primary-color': '#290535',
       'primary-color-400': '#500e4e',
       'secondary-color': '#641562',
-      'white': "#fff",
-      'emphasis': '#ca36ce'
+      'white': '#fff',
+      'emphasis': '#ca36ce',
+      'black': '#0c0c0c',
     },
     fontSize: {
       'title-1': ['68px', '74px'],
       'title-2': ['48px', '62px'],
-      'title-3': ['36px', '46.8px'],
+      'title-3': ['36px', '50px'],
       'title-4': ['24px', '36.4px'],
       'title-5': ['18px', '32px'],
       'title-6': ['16px', '24px'],
