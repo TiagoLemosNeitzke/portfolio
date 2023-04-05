@@ -1,4 +1,4 @@
-
+![](/src/img/portfolio.png)
 # Portifólio Tiago Lemos Neitzke
 
 Com este projeto busquei aplicar o que tenho aprendido com meus estudo em desenvolvimento web.
