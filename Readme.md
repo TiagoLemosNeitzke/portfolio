@@ -13,12 +13,12 @@ Utilizei para desenvolver o projeto as seguintes tecnologias:
 
 ## Seções
 
+### O projeto é composto por 3 seções:
+
 - Principal: Banner principal do site;
 - Sobre mim: Descrevo um pouco sobre mim e apresento algumas skills que possuo;
 - Meus serviços: Apresento alguns serviços prestados por mim;
 - Contato: Aqui tenho alguns dados de contatos e um formulário de contato.
-
-O projeto é composto por 3 seções:
 
 ## ✒️ Autor
 
