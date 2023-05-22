@@ -1,22 +1,22 @@
-<div id="contact" class="w-full bg-gradient-to-b from-primary-color-400 to-primary-color text-center">
-    
+<div id="contact" class="w-full text-center pt-4 bg-black">
+
     <div class="flex flex-col md:flex-row justify-center items-center">
-        <div class="md:w-96 lg:flex lg:flex-row lg:justify-around lg:items-center lg:w-full">
-            <div class="lg:w-96 lg:h-96 bg-primary-color rounded-md text-white shadow-lg shadow-primary-color-400 space-y-4 mb-4">
+        <div class="lg:flex lg:flex-row lg:justify-around lg:items-center lg:w-full">
+            <div class="rounded-md text-white text-start space-y-4 md:w-96 w-36 pb-4">
                 <h3 class="pb-4 pt-4 text-title-5 lg:text-title-4">Informações de contato</h3>
-                <div class="text-start pl-10">
-                    <h4 class="text-title-5">Cidade</h4>
+                <div class="text-start">
+                    <h4 class="text-title-5 pb-2">Cidade</h4>
                     <div class="flex flex-row">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                             <path
                                 d="M14.916 2.404a.75.75 0 01-.32 1.012l-.596.31V17a1 1 0 01-1 1h-2.26a.75.75 0 01-.75-.75v-3.5a.75.75 0 00-.75-.75H6.75a.75.75 0 00-.75.75v3.5a.75.75 0 01-.75.75h-3.5a.75.75 0 010-1.5H2V9.957a.75.75 0 01-.596-1.372L2 8.275V5.75a.75.75 0 011.5 0v1.745l10.404-5.41a.75.75 0 011.012.32zM15.861 8.57a.75.75 0 01.736-.025l1.999 1.04A.75.75 0 0118 10.957V16.5h.25a.75.75 0 110 1.5h-2a.75.75 0 01-.75-.75V9.21a.75.75 0 01.361-.64z" />
                         </svg>
-                        <p class="ml-2 text-title-5">Fátima do Sul</p>
+                        <p class="ml-2 text-title-5 md:text-title-4">Fátima do Sul</p>
                     </div>
 
                 </div>
-                <div class="text-start pl-10">
-                    <h4 class="text-title-5">Email</h4>
+                <div class="text-start">
+                    <h4 class="text-title-5 pb-2">Email</h4>
                     <div class="flex flex-row">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                             <path fill-rule="evenodd"
@@ -24,12 +24,14 @@
                                 clip-rule="evenodd" />
                         </svg>
 
-                        <a class="ml-2 text-title-5" href="mailto:tiago.neitzke@yahoo.com">tiago.neitzke@yahoo.com</a>
+                        <a class="ml-2 text-title-5 md:text-title-4" href="mailto:tiago.neitzke@yahoo.com">
+                            tiago.neitzke@yahoo.com
+                        </a>
                     </div>
 
                 </div>
-                <div class="text-start pl-10">
-                    <h4 class="text-title-5">Telefone | whatsapp</h4>
+                <div class="text-start">
+                    <h4 class="text-title-5 pb-2">Telefone | whatsapp</h4>
                     <div class="flex flex-row md:pb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                             <path d="M8 16.25a.75.75 0 01.75-.75h2.5a.75.75 0 010 1.5h-2.5a.75.75 0 01-.75-.75z" />
@@ -38,46 +40,55 @@
                                 clip-rule="evenodd" />
                         </svg>
 
-                        <a class="text-title-5" href="https://wa.me/5567999082296" target="_blank">+55 (67) 99908-2296</a>
+                        <a class="ml-2 text-title-5 md:text-title-4" href="https://wa.me/5567999082296" target="_blank">
+                            +55 (67) 99908-2296
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <div class="pt-8 bg-primary-color rounded-md text-white shadow-lg shadow-primary-color-400 pb-12 lg:w-96 lg:h-96">
+            <div class="pt-8 text-white pb-12 w-content md:w-96">
                 <div class="flex flex-row justify-center">
-                    <form class="w-36 md:w-96 lg:w-72" action="/src/php/sendEmail.php" method="post">
+                    <form class="w-36 md:w-96 lg:w-72" action="../../src/php/sendMail.php" method="post">
                         <div class="flex flex-col text-start">
                             <label class="mb-2 text-title-5" for="name">Nome</label>
-                            <input class="bg-secondary-color rounded-md" id="name" name="name" type="text">
+                            <input class="rounded-md h-6 pl-2" id="name" name="name" type="text">
                         </div>
                         <div class="flex flex-col text-start mt-2">
                             <label class="mb-2 text-title-5" for="email">Email</label>
-                            <input class="bg-secondary-color rounded-md" id="email" name="email" type="email">
+                            <input class="rounded-md h-6 pl-2" id="email" name="email" type="email">
                         </div>
                         <div class="flex flex-col text-start mt-2">
                             <label class="mb-2 text-title-5" for="phone">Whatsapp</label>
-                            <input class="bg-secondary-color rounded-md" id="phone" name="phone" type="tel">
+                            <input class="rounded-md h-6 pl-2" id="phone" name="phone" type="tel">
                         </div>
                         <div class="flex flex-col text-start mt-2">
                             <label class="mb-2 text-title-5" for="phone">Prefiro contato via</label>
-                            <select class="rounded-md bg-secondary-color" name="prefer_contact" id="option_contact">
-                                <option value=""></option>
-                                <option class="text-title-5" value="whatsapp">Whatsapp</option>
-                                <option class="text-title-5" value="email">Email</option>
+                            <select class="rounded-md h-6 pl-2" name="prefer_contact" id="option_contact">
+                                <option value="" class="text-black">Selecione uma opção</option>
+                                <option class="text-black" value="whatsapp">Whatsapp</option>
+                                <option class="text-black" value="email">Email</option>
                             </select>
                         </div>
                         <div class="flex flex-col text-start mt-2">
                             <label class="mb-2 text-title-5" for="message">Mensagem</label>
-                            <textarea class="bg-secondary-color rounded-md" id="message" name="message"></textarea>
+                            <textarea class="rounded-md" id="message" name="message" rows="6"></textarea>
                         </div>
 
-                        <button class="py-1 rounded-md bg-primary-color-400 hover:bg-primary-color-400 hover:scale-105 mt-6 w-20" type="submit">Enviar</button>
+                        <button
+                            class="py-1 rounded-md bg-primary-color-400 hover:bg-primary-color-400 hover:scale-105 mt-6 w-20"
+                            type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="flex flex-row w-screen align-middle justify-center items-center mt-6">
-        <span><a href="https://wa.me/5567999082296" target="_blank"><img class="w-36 " src="../../src/img/logoLetterWithe.png" alt="Tiago Neitzke Engenharia de Software"></a></span>
+    <div class="flex flex-col w-screen align-middle justify-center items-center mt-6 bg-black">
+        <a href="https://wa.me/5567999082296" target="_blank">
+            <img class="w-36" src="../../src/img/logoLetterWhite.png" alt="Tiago Neitzke Engenharia de Software">
+        </a>
+        <div class="pb-4">
+            <span class="text-title-5 text-white">&copy Todos os direitos reservados.</span>
+        </div>
     </div>
 </div>
