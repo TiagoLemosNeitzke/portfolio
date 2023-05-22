@@ -1,40 +1,4 @@
-const observer = new IntersectionObserver(entries => {
-
-    /*criando a class do tailwind dinâmicamente*/
-    let width = entries[0].target.attributes.style.value
-    width = width.split('width: ')
-    width = width[1].split('%')
-    let percent = width[0]
-    let partialProperty = "animate-progressBar"
-    let property = partialProperty + percent
-    entries[0].target.classList.add(property)
-}, {
-    threshold: 1
-})
-
-Array.from(document.querySelectorAll('.animate')).forEach(el => {
-    observer.observe(el)
-})
-observer.observe(document.querySelector('.animate'))
-const animate = new IntersectionObserver(entries => {
-    /*criando a class do tailwind dinâmicamente*/
-    let width = entries[0].target.attributes.style.value
-    width = width.split('width: ')
-    width = width[1].split('%')
-    let percent = width[0]
-    let partialProperty = "animate-progressBar"
-    let property = partialProperty + percent
-
-    entries[0].target.classList.add(property)
-}, {
-    threshold: 1
-})
-
-Array.from(document.querySelectorAll('.animate')).forEach(el => {
-    animate.observe(el)
-})
-animate.observe(document.querySelector('.animate'))
-
+/* Função para abrir o menu mobile */
 function handleMenu() {
     let div = document.getElementById('nav')
 
